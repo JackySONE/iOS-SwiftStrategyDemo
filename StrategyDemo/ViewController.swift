@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var numberTextfild: UITextField!
+    @IBOutlet weak var listTextVIew: UITextView!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    var totalPrice: Float = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +28,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func confirmButtonClick(_ sender: UIButton) {
+    }
+    
 }
 
