@@ -42,13 +42,13 @@
                                 <rect key="frame" x="92" y="55.5" width="191" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PQ-Du-9iI">
                                 <rect key="frame" x="92" y="92.5" width="191" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z86-In-Kaj">
                                 <rect key="frame" x="291" y="55" width="52" height="30"/>
@@ -65,7 +65,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="eqL-w3-cr9"/>
                                 </constraints>
-                                <state key="normal" title="取消"/>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="clearButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dex-GB-4Mf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總計：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVj-ND-8eD">
                                 <rect key="frame" x="32" y="536" width="52" height="21"/>
@@ -82,7 +85,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-jU-EhX">
                                 <rect key="frame" x="32" y="159" width="311" height="357"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -119,7 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="listTextVIew" destination="yyz-jU-EhX" id="g98-s0-kKV"/>
+                        <outlet property="listTextView" destination="yyz-jU-EhX" id="g98-s0-kKV"/>
                         <outlet property="numberTextfild" destination="0PQ-Du-9iI" id="tzU-y0-zTZ"/>
                         <outlet property="priceTextField" destination="A2v-P3-YVv" id="gIc-GK-uOf"/>
                         <outlet property="resultLabel" destination="l3T-T5-BC8" id="RrV-9O-TSp"/>

@@ -12,11 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var numberTextfild: UITextField!
-    @IBOutlet weak var listTextVIew: UITextView!
+    @IBOutlet weak var listTextView: UITextView!
     @IBOutlet weak var resultLabel: UILabel!
     
-    
-    var totalPrice: Float = 0.0
+    var total: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,28 @@ class ViewController: UIViewController {
     }
 
     @IBAction func confirmButtonClick(_ sender: UIButton) {
+        
+        guard let priceString = priceTextField.text, let numberString = numberTextfild.text else {
+            return
+        }
+        
+        let totalPrices = Float(priceString)! * Float(numberString)!
+        
+        total = total + totalPrices
+        
+        listTextView.text = listTextView.text + "\n單價：\(priceString) 數量：\(numberString) 合計：\(totalPrices)"
+        
+        resultLabel.text = "\(total)"
+        
+        self.view.endEditing(true)
     }
     
+    @IBAction func clearButtonClick(_ sender: UIButton) {
+        
+        priceTextField.text = nil
+        numberTextfild.text = nil
+        listTextView.text = nil
+        resultLabel.text = "0.00"
+    }
 }
 
