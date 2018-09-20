@@ -33,26 +33,12 @@ class ViewController: UIViewController {
     
     @IBAction func confirmButtonClick(_ sender: UIButton) {
         
-        // 通過調用組件來創建策略實現類的實例，並將策略傳給環境類的方式
-        var cc: CashContext?
-        switch options[selectedIndex] {
-        case "正常收費":
-            cc = CashContext.init(withStrategy: NormalStrategy())
-            break
-        case "滿300送100":
-            cc = CashContext.init(withStrategy: ReturnStrategy.init(moneyCondition: 300, moneyReturn: 100))
-            break
-        case "打八折":
-            cc = CashContext.init(withStrategy: RebateStrategy.init(moneyRebate: 0.8))
-            break
-        default:
-            cc = nil
-            break
-        }
-        
-        guard let priceString = priceTextField.text, let numberString = numberTextfild.text, let cashContext = cc else {
+        guard let priceString = priceTextField.text, let numberString = numberTextfild.text else {
             return
         }
+        
+        // 將相應的演算法類型字串傳入環境類
+        let cashContext = CashContext.init(withStrategyType: options[selectedIndex])
         
         var totalPrices: Float = 0.0
         totalPrices = cashContext.getResult(withMoney: (Float(priceString)! * Float(numberString)!))

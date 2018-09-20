@@ -13,8 +13,21 @@ class CashContext {
 
     fileprivate var cs: CashStrategy?
     
-    init(withStrategy strategy: CashStrategy?) {
-        self.cs = strategy
+    init(withStrategyType type: String) {
+        
+        switch type {
+        case "正常收費":
+            cs = NormalStrategy()
+            break
+        case "滿300送100":
+            cs = ReturnStrategy.init(moneyCondition: 300, moneyReturn: 100)
+            break
+        case "打八折":
+            cs = RebateStrategy.init(moneyRebate: 0.8)
+            break
+        default:
+            break
+        }
     }
     
     func getResult(withMoney money: Float) -> Float {

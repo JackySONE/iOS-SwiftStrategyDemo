@@ -18,7 +18,6 @@
 		9BB9BB842153768A008E89A2 /* NormalStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB832153768A008E89A2 /* NormalStrategy.swift */; };
 		9BB9BB86215376E9008E89A2 /* RebateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB85215376E9008E89A2 /* RebateStrategy.swift */; };
 		9BB9BB882153797F008E89A2 /* ReturnStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB872153797F008E89A2 /* ReturnStrategy.swift */; };
-		9BB9BB8A21537BD9008E89A2 /* CashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB8921537BD9008E89A2 /* CashFactory.swift */; };
 		9BB9BB8C21538989008E89A2 /* CashStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB8B21538989008E89A2 /* CashStrategy.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		9BB9BB832153768A008E89A2 /* NormalStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalStrategy.swift; sourceTree = "<group>"; };
 		9BB9BB85215376E9008E89A2 /* RebateStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebateStrategy.swift; sourceTree = "<group>"; };
 		9BB9BB872153797F008E89A2 /* ReturnStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStrategy.swift; sourceTree = "<group>"; };
-		9BB9BB8921537BD9008E89A2 /* CashFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFactory.swift; sourceTree = "<group>"; };
 		9BB9BB8B21538989008E89A2 /* CashStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +107,6 @@
 				9B808DF3214BF98E000DDA01 /* LaunchScreen.storyboard */,
 				9B808DF6214BF98E000DDA01 /* Info.plist */,
 				9B808DEE214BF98C000DDA01 /* StrategyDemo.xcdatamodeld */,
-				9BB9BB8921537BD9008E89A2 /* CashFactory.swift */,
 				9B11D1EE2153E89B000A4ABA /* CashContext.swift */,
 				9B11D1EB2153E710000A4ABA /* Strategy */,
 			);
@@ -229,7 +226,6 @@
 				9B808DF0214BF98C000DDA01 /* StrategyDemo.xcdatamodeld in Sources */,
 				9BB9BB86215376E9008E89A2 /* RebateStrategy.swift in Sources */,
 				9BB9BB882153797F008E89A2 /* ReturnStrategy.swift in Sources */,
-				9BB9BB8A21537BD9008E89A2 /* CashFactory.swift in Sources */,
 				9BB9BB8C21538989008E89A2 /* CashStrategy.swift in Sources */,
 				9BB9BB842153768A008E89A2 /* NormalStrategy.swift in Sources */,
 				9B808DEA214BF98C000DDA01 /* ViewController.swift in Sources */,
