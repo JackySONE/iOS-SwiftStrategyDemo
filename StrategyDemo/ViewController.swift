@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     var total: Float = 0.0
 
-    let options = ["正常收費", "打八折", "打七折","打五折"]
+    let options = ["正常收費", "滿300送100", "打八折"]
     var selectedIndex = 0
 
     override func viewDidLoad() {
@@ -32,28 +32,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func confirmButtonClick(_ sender: UIButton) {
-        
-        guard let priceString = priceTextField.text, let numberString = numberTextfild.text else {
+
+        guard let priceString = priceTextField.text, let numberString = numberTextfild.text, let cashier = CashFactory.createCashAccept(type: options[selectedIndex]) else {
             return
         }
 
         var totalPrices: Float = 0.0
-        switch selectedIndex {
-        case 0:
-            totalPrices = Float(priceString)! * Float(numberString)!
-            break
-        case 1:
-            totalPrices = Float(priceString)! * Float(numberString)! * 0.8
-            break
-        case 2:
-            totalPrices = Float(priceString)! * Float(numberString)! * 0.7
-            break
-        case 3:
-            totalPrices = Float(priceString)! * Float(numberString)! * 0.5
-            break
-        default:
-            break
-        }
+
+        totalPrices = cashier.acceptCash(money: (Float(priceString)!) * Float(numberString)!)
 
         total = total + totalPrices
         
@@ -69,7 +55,9 @@ class ViewController: UIViewController {
         priceTextField.text = nil
         numberTextfild.text = nil
         listTextView.text = nil
+        total = 0.0
         resultLabel.text = "0.00"
+        
     }
     
 }
