@@ -1,5 +1,5 @@
 //
-//  Cashable.swift
+//  CashStrategy.swift
 //  StrategyDemo
 //
 //  Created by 賴彥宇 on 2018/9/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Cashable {
+protocol CashStrategy {
 
     func acceptCash(money: Float) -> Float
 

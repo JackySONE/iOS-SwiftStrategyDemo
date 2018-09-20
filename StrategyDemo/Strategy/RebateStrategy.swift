@@ -1,5 +1,5 @@
 //
-//  CashRebate.swift
+//  RebateStrategy.swift
 //  StrategyDemo
 //
 //  Created by 賴彥宇 on 2018/9/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CashRebate: CashNormal {
+class RebateStrategy: CashStrategy {
 
     fileprivate var moneyRebate: Float = 1.0
 
@@ -16,7 +16,7 @@ class CashRebate: CashNormal {
         self.moneyRebate = moneyRebate
     }
 
-    override func acceptCash(money: Float) -> Float {
+    func acceptCash(money: Float) -> Float {
         return money * moneyRebate
     }
     

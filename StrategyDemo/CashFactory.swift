@@ -10,24 +10,24 @@ import UIKit
 
 class CashFactory {
 
-    class func createCashAccept(type: String) -> CashNormal? {
-
-        var cash: CashNormal?
-        switch type {
-        case "正常收費":
-            cash = CashNormal()
-            break
-        case "滿300送100":
-            cash = CashReturn.init(moneyCondition: 300, moneyReturn: 100)
-            break
-        case "打八折":
-            cash = CashRebate.init(moneyRebate: 0.8)
-            break
-        default:
-            cash = nil
-            break
-        }
-
-        return cash
-    }
+//    class func createCashAccept(type: String) -> NormalStrategy? {
+//
+//        var cash: CashNormal?
+//        switch type {
+//        case "正常收費":
+//            cash = CashNormal()
+//            break
+//        case "滿300送100":
+//            cash = CashReturn.init(moneyCondition: 300, moneyReturn: 100)
+//            break
+//        case "打八折":
+//            cash = CashRebate.init(moneyRebate: 0.8)
+//            break
+//        default:
+//            cash = nil
+//            break
+//        }
+//
+//        return cash
+//    }
 }

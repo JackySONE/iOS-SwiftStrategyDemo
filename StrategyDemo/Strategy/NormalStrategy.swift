@@ -1,5 +1,5 @@
 //
-//  CashNormal.swift
+//  NormalStrategy.swift
 //  StrategyDemo
 //
 //  Created by 賴彥宇 on 2018/9/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CashNormal: Cashable {
+class NormalStrategy: CashStrategy {
 
     func acceptCash(money: Float) -> Float {
         return money
