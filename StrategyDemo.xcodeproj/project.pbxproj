@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B11D1EF2153E89B000A4ABA /* CashContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11D1EE2153E89B000A4ABA /* CashContext.swift */; };
 		9B808DE8214BF98C000DDA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B808DE7214BF98C000DDA01 /* AppDelegate.swift */; };
 		9B808DEA214BF98C000DDA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B808DE9214BF98C000DDA01 /* ViewController.swift */; };
 		9B808DED214BF98C000DDA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B808DEB214BF98C000DDA01 /* Main.storyboard */; };
@@ -14,11 +15,10 @@
 		9B808DF2214BF98E000DDA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B808DF1214BF98E000DDA01 /* Assets.xcassets */; };
 		9B808DF5214BF98E000DDA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B808DF3214BF98E000DDA01 /* LaunchScreen.storyboard */; };
 		9B808E00214BF98E000DDA01 /* StrategyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B808DFF214BF98E000DDA01 /* StrategyDemoTests.swift */; };
-		9BB9BB842153768A008E89A2 /* CashNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB832153768A008E89A2 /* CashNormal.swift */; };
-		9BB9BB86215376E9008E89A2 /* CashRebate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB85215376E9008E89A2 /* CashRebate.swift */; };
-		9BB9BB882153797F008E89A2 /* CashReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB872153797F008E89A2 /* CashReturn.swift */; };
-		9BB9BB8A21537BD9008E89A2 /* CashFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB8921537BD9008E89A2 /* CashFactory.swift */; };
-		9BB9BB8C21538989008E89A2 /* Cashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB8B21538989008E89A2 /* Cashable.swift */; };
+		9BB9BB842153768A008E89A2 /* NormalStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB832153768A008E89A2 /* NormalStrategy.swift */; };
+		9BB9BB86215376E9008E89A2 /* RebateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB85215376E9008E89A2 /* RebateStrategy.swift */; };
+		9BB9BB882153797F008E89A2 /* ReturnStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB872153797F008E89A2 /* ReturnStrategy.swift */; };
+		9BB9BB8C21538989008E89A2 /* CashStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9BB8B21538989008E89A2 /* CashStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B11D1EE2153E89B000A4ABA /* CashContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashContext.swift; sourceTree = "<group>"; };
 		9B808DE4214BF98C000DDA01 /* StrategyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrategyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B808DE7214BF98C000DDA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B808DE9214BF98C000DDA01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,11 +44,10 @@
 		9B808DFB214BF98E000DDA01 /* StrategyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B808DFF214BF98E000DDA01 /* StrategyDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyDemoTests.swift; sourceTree = "<group>"; };
 		9B808E01214BF98E000DDA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BB9BB832153768A008E89A2 /* CashNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashNormal.swift; sourceTree = "<group>"; };
-		9BB9BB85215376E9008E89A2 /* CashRebate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRebate.swift; sourceTree = "<group>"; };
-		9BB9BB872153797F008E89A2 /* CashReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashReturn.swift; sourceTree = "<group>"; };
-		9BB9BB8921537BD9008E89A2 /* CashFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFactory.swift; sourceTree = "<group>"; };
-		9BB9BB8B21538989008E89A2 /* Cashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cashable.swift; sourceTree = "<group>"; };
+		9BB9BB832153768A008E89A2 /* NormalStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalStrategy.swift; sourceTree = "<group>"; };
+		9BB9BB85215376E9008E89A2 /* RebateStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebateStrategy.swift; sourceTree = "<group>"; };
+		9BB9BB872153797F008E89A2 /* ReturnStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStrategy.swift; sourceTree = "<group>"; };
+		9BB9BB8B21538989008E89A2 /* CashStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B11D1EB2153E710000A4ABA /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				9BB9BB8B21538989008E89A2 /* CashStrategy.swift */,
+				9BB9BB832153768A008E89A2 /* NormalStrategy.swift */,
+				9BB9BB85215376E9008E89A2 /* RebateStrategy.swift */,
+				9BB9BB872153797F008E89A2 /* ReturnStrategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		9B808DDB214BF98C000DDA01 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +107,8 @@
 				9B808DF3214BF98E000DDA01 /* LaunchScreen.storyboard */,
 				9B808DF6214BF98E000DDA01 /* Info.plist */,
 				9B808DEE214BF98C000DDA01 /* StrategyDemo.xcdatamodeld */,
-				9BB9BB8B21538989008E89A2 /* Cashable.swift */,
-				9BB9BB832153768A008E89A2 /* CashNormal.swift */,
-				9BB9BB85215376E9008E89A2 /* CashRebate.swift */,
-				9BB9BB872153797F008E89A2 /* CashReturn.swift */,
-				9BB9BB8921537BD9008E89A2 /* CashFactory.swift */,
+				9B11D1EE2153E89B000A4ABA /* CashContext.swift */,
+				9B11D1EB2153E710000A4ABA /* Strategy */,
 			);
 			path = StrategyDemo;
 			sourceTree = "<group>";
@@ -216,12 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B808DF0214BF98C000DDA01 /* StrategyDemo.xcdatamodeld in Sources */,
-				9BB9BB86215376E9008E89A2 /* CashRebate.swift in Sources */,
-				9BB9BB882153797F008E89A2 /* CashReturn.swift in Sources */,
-				9BB9BB8A21537BD9008E89A2 /* CashFactory.swift in Sources */,
-				9BB9BB8C21538989008E89A2 /* Cashable.swift in Sources */,
-				9BB9BB842153768A008E89A2 /* CashNormal.swift in Sources */,
+				9BB9BB86215376E9008E89A2 /* RebateStrategy.swift in Sources */,
+				9BB9BB882153797F008E89A2 /* ReturnStrategy.swift in Sources */,
+				9BB9BB8C21538989008E89A2 /* CashStrategy.swift in Sources */,
+				9BB9BB842153768A008E89A2 /* NormalStrategy.swift in Sources */,
 				9B808DEA214BF98C000DDA01 /* ViewController.swift in Sources */,
+				9B11D1EF2153E89B000A4ABA /* CashContext.swift in Sources */,
 				9B808DE8214BF98C000DDA01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

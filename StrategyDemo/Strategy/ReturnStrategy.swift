@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CashReturn: CashNormal {
+class ReturnStrategy: CashStrategy {
 
     fileprivate var moneyCondition: Float = 0.0
     fileprivate var moneyReturn: Float = 0.0
@@ -18,7 +18,7 @@ class CashReturn: CashNormal {
         self.moneyReturn = mReturn
     }
 
-    override func acceptCash(money: Float) -> Float {
+    func acceptCash(money: Float) -> Float {
         var result = money
         if money >= self.moneyCondition {
             result = money - floorf(money / moneyCondition) * moneyReturn
